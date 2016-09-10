@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Giant Bomb Wiki Search",
+  "description": "This extension allows you to search highlighted word(s) in Giant Bomb Wiki",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "TBD.png",
+    "default_title": "Click here!"
+  },
+  "permissions": [
+    "activeTab", "contextMenus"
+  ],
+  "background": {
+    "scripts": ["eventpage.js"]
+  }
+}
