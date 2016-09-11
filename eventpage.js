@@ -6,19 +6,55 @@ function getword(info,tab) {
 	var baseUrl = "http://www.giantbomb.com/api";
 	var queryURL = baseUrl + '/search/?api_key=' + apiKey + '&format=json';
 	var query = info.selectionText;
+	var searchURL = queryURL + '&query=' + encodeURI(query) + '&limit=1&resources=game';
+	// chrome.tabs.create({
+	// 	url: searchURL
+	// })
+	// var httpRequest = new XMLHttpRequest();
+
+	// function apiRequest(searchURL){
+	// 	if (!httpRequest) {
+	// 		alert("API Request Failed");
+	// 	}
+	// 	httpRequest.onreadystatechange = alertContents;
+	// 	httpRequest.open('GET', searchURL);
+	// 	httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	// 	httpRequest.send();
+	// }
+
+	// function alertContents() {
+	// 	if (httpRequest.readyState === XMLHttpRequest.DONE) {
+	// 		if (httpRequest.status === 200) {
+	// 			chrome.tabs.create({
+	// 				url: httpRequest.site_detail_url,
+	// 			});
+	// 		} else {
+	// 			alert('API Request Failed');
+	// 		}
+	// 	}
+	// }
+	
+	// apiRequest(searchURL);
+	// alertContents();
+
 	$.ajax({
-	url: queryURL + '&query=' + encodeURI(query),
-	dataType: "json",
-	success: searchCallback
-	});
-	// callback for when we get back the results
-	function searchCallback(data) {
-	    var games = data.site_detail_url;
-	    chrome.tabs.create({  
-			url: games,
-		});   
-	}        
+		url: searchURL,
+		dataType: "json",
+		success: function(data) {
+			console.log("test");
+		    var games = data.results[0].site_detail_url;
+		    console.log(data.results);
+		    console.log(data.results[0].site_detail_url);
+		    chrome.tabs.create({  
+				url: games,
+			});   
+		},
+		error: function() {
+			console.log("AJAX request failed.")
+		}  
+	});     
 }
+
 chrome.contextMenus.create({
   title: "Search Giant Bomb Wiki for: %s",
   //contexts refers to the different "contexts" a menu can appear in. Example: all, page, selection, frame, link, image, etc. 

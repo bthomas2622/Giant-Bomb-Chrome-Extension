@@ -10,9 +10,9 @@
     "default_title": "Click here!"
   },
   "permissions": [
-    "activeTab", "contextMenus"
+    "activeTab", "contextMenus", "http://www.google.com/", "http://giantbomb.com/", "<all_urls>"
   ],
   "background": {
-    "scripts": ["eventpage.js"]
+    "scripts": ["jquery-1.11.3.min.js", "eventpage.js"]
   }
 }
