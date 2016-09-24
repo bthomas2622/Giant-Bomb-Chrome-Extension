@@ -15,8 +15,8 @@
   "icons": {
     "16": "GB.png",
     "19": "GB.png",
-    "48": "GB.png",
-    "128": "GB.png"
+    "48": "GB48.png",
+    "128": "GB128.png"
   },
   "background": {
     "scripts": ["jquery-1.11.3.min.js", "eventpage.js"]
