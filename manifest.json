@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Giant Bomb Wiki Search",
-  "description": "This extension allows you to search highlighted word(s) in Giant Bomb Game Wiki",
+  "name": "Giant Bomb Game Wiki Search",
+  "description": "This extension allows you to search highlighted word(s) in the Giant Bomb Game Wiki",
   "version": "1.0",
 
   "browser_action": {

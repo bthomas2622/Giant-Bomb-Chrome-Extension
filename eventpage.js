@@ -19,6 +19,7 @@ function getword(info,tab) {
 			var i = 0;
 			var games = "temp";
 			if (data.results[0] == undefined) {
+				alert("Sorry there are no matches for this search");
 				console.log("no matching results");
 			}
 			else {
@@ -65,7 +66,7 @@ function getword(info,tab) {
 }
 
 chrome.contextMenus.create({
-  title: "Search Giant Bomb Game Wiki for: %s",
+  title: "Search GB Game Wiki for: %s",
   //contexts refers to the different "contexts" a menu can appear in. Example: all, page, selection, frame, link, image, etc. 
   contexts:["selection"], 
   //function that will be called back when menu item is clicked
