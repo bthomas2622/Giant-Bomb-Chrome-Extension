@@ -1,7 +1,7 @@
 Ben Thomas - Giant Bomb Game Wiki Search
 ===============================
 
-Colony Collapse Disorder (CCD)
+Giant Bomb Game Wiki Search - Google Chrome Extension
 
 # **About**
 
