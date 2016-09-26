@@ -15,7 +15,7 @@ Use: Right click a highlighted selection, a context menu will appear, click the 
 
 ## How it was programmed
 
-###### Tools
+#### Tools
 This Google Chrome extension was programmed in JavaScript/JSON. The "JQuery" JS framework was utilzed for its AJAX functionality to query the Giant Bomb database. The "Giant Bomb API" was used to create parameters for AJAX query and get web URL of matching searched game. Chrome Extension documentation was also necessary to set up "manifest.json" file, set icons, and provide chrome tab manipulation commands. 
 
 #### Directory Structure
