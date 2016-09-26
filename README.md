@@ -1,11 +1,11 @@
 Ben Thomas - Giant Bomb Game Wiki Search
 ===============================
 
-Giant Bomb Game Wiki Search - Google Chrome Extension
+Giant Bomb Game Wiki Right-Click Search - Google Chrome Extension
 
 # **About**
 
-This Google Chrome extension allows you to right click a highlighted selection in the Google Chrome browser and search that selection in the Giant Bomb Game Wiki. If the highlighted selection matches a game in the database a new window will open with the database page for that game. There one can read about the game, watch associated videos, and enjoy all the other Giant Bomb content around that game. 
+This Google Chrome Extension for Giant Bomb fans and video game fans allows you to right click a highlighted game title in the Google Chrome browser and search that selection in the Giant Bomb Game Wiki. If the highlighted selection matches a game in the wiki database a new window will open on the wiki page for that game. There one can read about the game, watch associated videos, and enjoy all the other Giant Bomb content related to that game. 
 
 ## How to Use 
 

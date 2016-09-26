@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Giant Bomb Game Wiki Search",
-  "description": "This extension allows you to search highlighted word(s) in the Giant Bomb Game Wiki",
+  "name": "Giant Bomb Game Wiki Right-Click Search",
+  "description": "This extension allows you to right-click highlighted word(s) in the chrome browser and search in the Giant Bomb Game Wiki",
   "version": "1.0",
 
   "browser_action": {
